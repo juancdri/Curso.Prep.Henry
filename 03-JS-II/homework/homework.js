@@ -67,16 +67,17 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
-  if(color === "blue") {
-    return("This is blue");
-  }else if(color === "red") {
-    return("This is red");
-  }else if (color === "green") {
-    return("This is green");
-  }else if (color === "orange") {
-    return("This is orange");
-  }else 
-    return("Color not found");
+  switch (color) {
+    case "blue":
+      return "This is blue";
+    case "red":
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+        return "This is orange";
+    default: 
+      return "Color not found" }
 }
 
 function esDiezOCinco(numero) {
@@ -164,11 +165,10 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
-  if(valor === true){
+  if(valor){
     return "Soy verdadero";
-  }else(valor === false);{
-    return "Soy falso";
   }
+    return "Soy falso";
 }
 
 function tablaDelSeis(){
